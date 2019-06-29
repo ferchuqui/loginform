@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  
 </head>
 <body>
   <!-- Based on https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/ -->
@@ -27,10 +29,38 @@
     </div>
     <div class="form-container sign-in-container">
       <!-- Sign In form code goes here -->
+      <form action="#">
+        <h1>Ingresar Cuenta</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#">Olvidaste tu clave</a>
+        <button>Sign In</button>
+      </form>
     </div>
     <div class="overlay-container">
     <!-- The overlay code goes here -->
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Bienvenido de nuevo</h1>
+          <p>
+            Para mantenerse en contacto con nosotros, inicie sesión con su información personal.
+          </p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hola</h1>
+          <p>Ingrese sus datos personales</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
